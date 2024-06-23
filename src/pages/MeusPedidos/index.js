@@ -7,7 +7,6 @@ import Home from "../Home";
 export function MeusPedidos() {
   return (
     <View style={styles.container}>
-      <View style={styles.white}></View>
       <View style={globalStyles.pageContainer}>
         <Text>Tela Meus Pedidos</Text>
         <View>

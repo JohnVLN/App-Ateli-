@@ -42,7 +42,7 @@ export const globalStyles = StyleSheet.create({
     fontSize: 20
   },
   wideButton: {
-    backgroundColor: 'blueviolet',
+    backgroundColor: '#8d6889',
     height: 120,
     width: 250,
   }
