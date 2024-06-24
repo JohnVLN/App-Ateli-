@@ -27,7 +27,7 @@ export function Login() {
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        alert("Credenciais Erradas!");
+        alert(`Ocorreu um erro ao buscar dados do usuário:\n${error}`);
       });
       
   }
