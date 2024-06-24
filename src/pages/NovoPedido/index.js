@@ -84,7 +84,7 @@ export function NovoPedido() {
   return (
     <Animatable.ScrollView style={globalStyles.container}
       delay = {600}
-      animation = 'fadeInUp'>
+      animation = {'fadeInUp'}>
       {/*Categoria*/}
       <View
         style={[
