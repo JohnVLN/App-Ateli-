@@ -13,6 +13,7 @@ import { database } from "../../services/firebase.config";
 import { get, push, ref, set } from "firebase/database";
 import { AuthContext } from "../../context/AuthContext";
 import { format } from "date-fns";
+import * as Animatable from "react-native-animatable";
 
 export function NovoPedido() {
   const [categorias, setCategorias] = useState([]);
@@ -81,7 +82,9 @@ export function NovoPedido() {
   }
 
   return (
-    <ScrollView style={globalStyles.container}>
+    <Animatable.ScrollView style={globalStyles.container}
+      delay = {600}
+      animation = 'fadeInUp'>
       {/*Categoria*/}
       <View
         style={[
@@ -244,6 +247,6 @@ export function NovoPedido() {
       >
         <Text style={globalStyles.submitButtonText}>Enviar</Text>
       </TouchableOpacity>
-    </ScrollView>
+    </Animatable.ScrollView>
   );
 }
